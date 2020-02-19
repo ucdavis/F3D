@@ -12,6 +12,6 @@ jobs:
       - name: install python packages
         run: |
           pip install -r toy_project/requirements.txt
-          pip install toy_project
+          pip install ./toy_project
       - name: run tests
         run: pytest toy_project

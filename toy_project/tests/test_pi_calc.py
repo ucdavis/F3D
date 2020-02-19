@@ -11,4 +11,6 @@ from pi_calculator import pi_calc
     ]
 )
 def test__PiCalculator(sig_digs, expected):
-    assert pi_calc.PiCalculator(significant_digits=sig_digs) == expected
+    calculator = pi_calc.PiCalculator(significant_digits=sig_digs)
+    assert isinstance(calculator, pi_calc.PiCalculator)
+    assert calculator() == expected
