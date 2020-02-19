@@ -78,7 +78,3 @@ class PiCalculator:
             self.history = pi_approx
 
         return round(self.history[-1], self.significant_digits - 1)
-
-
-if __name__ == "__main__":
-    print(PiCalculator(significant_digits=3)())
