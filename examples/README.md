@@ -32,13 +32,22 @@ we can write unit tests of these functions. You'll find such tests in `test__cal
 in the style of `pytest`.
 
 ### Object-Oriented Implementation
-The functional implementation is a big improvement (and for some things is definitely preferred).
+The functional implementation is a big improvement (and for some things is definitely the most preferred).
 However, there is some bundling of concerns. If you read through the functions, you'll notice some
 functions have to do with scoring / calculating `pi`, while others have to do with simulating the
 mechanics of throwing darts. In object-oriented programming (OOP), we'd collect these functions
 as methods of `PiCalculator` and `Dart` objects, and use the notion of class properties to store
 variables we might need. This saves us some annoying passing of variables through functions, which
 makes refactoring difficult.
+
+### Performance
+This is obviously not the fastest way to calculate `pi`. However, each implementation has its own
+performance characteristics.
+
+The procedural implementation and functional implementations are faster on a single calculation.
+However, the OOP preserves the history of the dart throws, and therefore is much quicker in successive
+calculations. The reason for the speed discrepancy is that classes (objects) in python are extremely
+flexible, and therefore hard to compile efficiently. 
 
 ## "Installation"
 To install the required packages, ensure you have `pip` installed, and do

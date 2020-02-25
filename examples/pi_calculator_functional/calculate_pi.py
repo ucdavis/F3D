@@ -48,8 +48,10 @@ def calculate_pi(
     """
     history = history or list()
     threshold = get_threshold(significant_digits)
-    # We set the recursion limit because this function calls itself many times
-    # depending on threshold.
+    # We temporarily up the recursion limit because this function calls
+    # itself many times depending on threshold. Change it back to not incur
+    # side effects.
+    recursion_limit = sys.getrecursionlimit()
     sys.setrecursionlimit(10**(significant_digits + 2))
     num_darts_thrown, num_darts_in_circle = _throw_and_score(
         n_darts_per_scoring, num_darts_thrown, num_darts_in_circle)
@@ -57,6 +59,7 @@ def calculate_pi(
     history.append(result)
     if not is_converged(threshold, history):
         calculate_pi(significant_digits, num_darts_thrown, num_darts_in_circle, history)
+    sys.setrecursionlimit(recursion_limit)
     return round(history[-1], significant_digits - 1)
 
 
