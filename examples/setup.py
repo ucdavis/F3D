@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="toy_project",
+    name="pi_calculators",
     version="0.0.1",
     author="DS4S",
     author_email="",

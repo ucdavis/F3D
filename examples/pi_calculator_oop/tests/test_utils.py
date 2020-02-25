@@ -1,6 +1,6 @@
 import numpy as np
 import pytest
-from pi_calculator import utils
+from pi_calculator_oop import utils
 
 
 @pytest.mark.parametrize("num_pairs", [0, 1, 10, 30])

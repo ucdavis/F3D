@@ -1,5 +1,5 @@
 import numpy as np
-from pi_calculator.dart import Dart
+from pi_calculator_oop.dart import Dart
 
 
 def test_Dart():
