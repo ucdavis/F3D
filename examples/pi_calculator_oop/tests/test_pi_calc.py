@@ -1,5 +1,5 @@
 import pytest
-from pi_calculator_oop import pi_calc
+from pi_calculator_oop import calculate_pi
 
 
 @pytest.mark.parametrize(
@@ -12,6 +12,6 @@ from pi_calculator_oop import pi_calc
 )
 def test__PiCalculator(sig_digs, expected):
     for n_darts_per_throw in [1, 3, 10]:
-        calculator = pi_calc.PiCalculator(n_darts_per_throw)
-        assert isinstance(calculator, pi_calc.PiCalculator)
+        calculator = calculate_pi.PiCalculator(n_darts_per_throw)
+        assert isinstance(calculator, calculate_pi.PiCalculator)
         assert calculator.calculate(sig_digs) == expected
