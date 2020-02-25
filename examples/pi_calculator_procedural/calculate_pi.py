@@ -10,7 +10,7 @@ if len(sys.argv) > 2:
 
 
 ### Setup ###
-threshold = 1 / (10 ** N_SIG_DIGS)
+threshold = 1 / (10 ** N_SIG_DIGS + 1)
 
 history = list()
 n_darts_thrown = 0

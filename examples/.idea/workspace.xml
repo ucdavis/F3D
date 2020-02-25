@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85d32528-239d-4259-8a4f-9125126e71ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_calculator_functional/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_functional/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_calculator_functional/test__calculate_pi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_functional/test__calculate_pi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_calculator_oop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_oop/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_calculator_oop/calculate_pi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_oop/pi_calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_calculator_procedural/calculate_pi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_procedural/calculate_pi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calc.py">
+        <entry file="file://$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calculator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -34,19 +41,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi_calculator_oop/tests/test_dart.py">
+        <entry file="file://$PROJECT_DIR$/pi_calculator_oop/pi_calculator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi_calculator_oop/calculate_pi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="343">
+              <caret line="59" column="18" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -55,10 +53,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pi_calculator_oop/dart.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi_calculator_procedural/calculate_pi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="555">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -70,8 +73,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="759">
-                <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+              <first_editor relative-caret-position="707">
+                <caret line="69" selection-start-line="69" selection-end-line="69" />
               </first_editor>
               <second_editor />
             </state>
@@ -79,10 +82,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi_calculator_oop/tests/test_utils.py">
+        <entry file="file://$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="696">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+              <folding>
+                <element signature="e#0#6#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pi_calculator_functional/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -93,15 +108,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi_calculator_functional/test__calculate_pi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
@@ -114,6 +124,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>threshold</find>
+      <find>&lt; 1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,18 +141,20 @@
         <option value="$PROJECT_DIR$/pi_calculator/dart.py" />
         <option value="$PROJECT_DIR$/pi_calculator/__init__.py" />
         <option value="$PROJECT_DIR$/tests/test_pi_calc.py" />
-        <option value="$PROJECT_DIR$/pi_calculator_functional/__init__.py" />
-        <option value="$PROJECT_DIR$/pi_calculator_procedural/calculate_pi.py" />
         <option value="$PROJECT_DIR$/pi_caclulator_oop/__init__.py" />
         <option value="$PROJECT_DIR$/pi_caclulator_oop/calculate_pi.py" />
-        <option value="$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py" />
-        <option value="$PROJECT_DIR$/pi_calculator_functional/test__calculate_pi.py" />
         <option value="$PROJECT_DIR$/pi_calculator_oop/calculate_pi.py" />
         <option value="$PROJECT_DIR$/pi_calculator_oop/tests/test_utils.py" />
         <option value="$PROJECT_DIR$/pi_calculator_oop/tests/test_dart.py" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calc.py" />
+        <option value="$PROJECT_DIR$/pi_calculator_functional/__init__.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pi_calculator_oop/pi_calculator.py" />
+        <option value="$PROJECT_DIR$/pi_calculator_procedural/calculate_pi.py" />
+        <option value="$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py" />
+        <option value="$PROJECT_DIR$/pi_calculator_functional/test__calculate_pi.py" />
+        <option value="$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calculator.py" />
       </list>
     </option>
   </component>
@@ -223,12 +236,12 @@
       <updated>1582140102338</updated>
       <workItem from="1582140109405" duration="5475000" />
       <workItem from="1582154698732" duration="564000" />
-      <workItem from="1582605143172" duration="5283000" />
+      <workItem from="1582605143172" duration="6732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11322000" />
+    <option name="totallyTimeSpent" value="12771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="160" y="23" width="1181" height="1027" extended-state="0" />
@@ -318,28 +331,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi_calculator_functional/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pi_calculator_oop/utils.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pi_calculator_oop/dart.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pi_calculator_oop/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="117" column="21" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -348,16 +344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pi_calculator_functional/test__calculate_pi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -378,40 +364,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi_calculator_procedural/calculate_pi.py">
+    <entry file="file://$PROJECT_DIR$/pi_calculator_functional/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="759">
-            <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+          <first_editor relative-caret-position="707">
+            <caret line="69" selection-start-line="69" selection-end-line="69" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi_calculator_oop/calculate_pi.py">
+    <entry file="file://$PROJECT_DIR$/pi_calculator_procedural/calculate_pi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="555">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calc.py">
+    <entry file="file://$PROJECT_DIR$/pi_calculator_oop/dart.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi_calculator_oop/pi_calculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="59" column="18" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi_calculator_functional/test__calculate_pi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi_calculator_oop/tests/test_pi_calculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

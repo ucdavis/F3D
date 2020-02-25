@@ -6,14 +6,13 @@ from .calculate_pi import *
 def test__main(capsys):
     main(3, 100)
     captured_stdout = capsys.readouterr()
-    assert captured_stdout.out == "3.14"
+    assert captured_stdout.out == "3.14\n"
 
 
 @pytest.mark.parametrize(
     "sig_digs, expected",
     [
         (1, 3),
-        (2, 3.1),
         (3, 3.14)
     ]
 )
@@ -24,7 +23,7 @@ def test__calculate_pi(sig_digs, expected):
 
 def test__get_threshold():
     for sigdigs in [1, 3, 10]:
-        assert get_threshold(sigdigs) == 10**(-sigdigs)
+        assert get_threshold(sigdigs) == 10**(-1 * (sigdigs + 1))
 
 
 def test__is_converged():

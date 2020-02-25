@@ -55,14 +55,22 @@ import pi_calculator_procedural as pi_calculator
 ```
 
 ## Usage
-The functional and OOP calculators have python APIs. Use with
+The functional and OOP calculators have python APIs. Use the OOP implementation with
 ```python
 import pi_calculator_oop as pi_calculator
 # initialize the calculator by specify the desired precision
 calculator = pi_calculator.PiCalculator(darts_per_score=100)
 # execute the calculation.
-pi = calculator.calculate(3)  # should return 3.14
+pi = calculator.calculate(significant_digits=3)  # should return 3.14
 ```
+and the functional calculator with
+```python
+import pi_calculator_functional as pi_calculator
+pi_calculator.main(significant_digits=3, n_darts_per_scoring=100)
+
+```
+
+
 This is not a very efficient method for calculating `pi`, so be very patient
 if you set `significant_digits` above `4`.
 

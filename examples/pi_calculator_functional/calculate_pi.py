@@ -1,3 +1,4 @@
+import sys
 import numpy as np
 
 
@@ -47,13 +48,41 @@ def calculate_pi(
     """
     history = history or list()
     threshold = get_threshold(significant_digits)
-    num_darts_thrown += n_darts_per_scoring
-    num_darts_in_circle += get_number_in_circle(n_darts_per_scoring)
+    # We set the recursion limit because this function calls itself many times
+    # depending on threshold.
+    sys.setrecursionlimit(10**(significant_digits + 2))
+    num_darts_thrown, num_darts_in_circle = _throw_and_score(
+        n_darts_per_scoring, num_darts_thrown, num_darts_in_circle)
     result = 4 * num_darts_in_circle / num_darts_thrown
     history.append(result)
     if not is_converged(threshold, history):
         calculate_pi(significant_digits, num_darts_thrown, num_darts_in_circle, history)
-    return result
+    return round(history[-1], significant_digits - 1)
+
+
+def _throw_and_score(n_darts_per_scoring, num_darts_thrown, num_darts_in_circle):
+    """
+    Throw `n_darts_per_scoring` and increment the running count of
+    total darts and ones inside the circle.
+
+    n_darts_per_scoring: int
+        The number of darts to throw between scores. Higher numbers
+        converge faster.
+    num_darts_thrown: int (default 0)
+        The number of darts thrown.
+    num_darts_in_circle: int (default 0)
+        The number of darts that have landed in the circle.
+
+    Returns
+    -------
+    num_darts_thrown: int
+        The incremented total number of darts thrown
+    num_darts_in_circle: int
+        The incremented total number of darts in the circle
+    """
+    num_darts_thrown += n_darts_per_scoring
+    num_darts_in_circle += get_number_in_circle(n_darts_per_scoring)
+    return num_darts_thrown, num_darts_in_circle
 
 
 def get_threshold(significant_digits):
@@ -71,7 +100,7 @@ def get_threshold(significant_digits):
     threshold: float
         The corresponding threshold.
     """
-    return 1 / (10 ** significant_digits)
+    return 1 / (10 ** (significant_digits + 1))
 
 
 def is_converged(threshold, history):
@@ -112,7 +141,7 @@ def get_number_in_circle(num_thrown):
         The number of darts the hit in the circle.
     """
     coords = get_random_coords(num_thrown)
-    return sum(np.linalg.norm(coords) < 1)
+    return int(sum([np.linalg.norm(coord) < 1 for coord in coords]))
 
 
 def get_random_coords(num_thrown):

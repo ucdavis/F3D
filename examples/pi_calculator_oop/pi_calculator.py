@@ -47,7 +47,7 @@ class PiCalculator:
         significant_digits: int
             Number of significant digits to use to set the convergence threshold.
         """
-        threshold = 1 / 10**(self.significant_digits)
+        threshold = 1 / 10**(self.significant_digits + 1)
         if len(self._history) < 100:
             return False
         return np.all(abs(np.diff(self.history[-100:])) < threshold)
@@ -84,7 +84,7 @@ class PiCalculator:
         self.significant_digits = significant_digits
         total_thrown = 0
         in_circle = 0
-        while not self.converged(significant_digits):
+        while not self.converged:
             total_thrown += self.darts_per_score
             in_circle += self.throw_and_score()
             pi_approx = 4 * in_circle/total_thrown
