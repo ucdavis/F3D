@@ -1,4 +1,4 @@
-name: test toy project
+name: test example project
 # This workflow is triggered on pushes to the repository.
 on: [push]
 

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85d32528-239d-4259-8a4f-9125126e71ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_calculator_functional/calculate_pi.py" afterDir="false" />
-    </list>
+    <list default="true" id="85d32528-239d-4259-8a4f-9125126e71ea" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,12 +227,12 @@
       <updated>1582140102338</updated>
       <workItem from="1582140109405" duration="5475000" />
       <workItem from="1582154698732" duration="564000" />
-      <workItem from="1582605143172" duration="7157000" />
+      <workItem from="1582605143172" duration="7261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13196000" />
+    <option name="totallyTimeSpent" value="13300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="160" y="23" width="1520" height="1027" extended-state="0" />
