@@ -234,7 +234,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 
 {% comment %}
-SCHEDULE
+Tentative SCHEDULE
 
 Show the workshop's schedule.  Edit the items and times in the table
 to match your plans.  You may also want to change 'Day 1' and 'Day
