@@ -29,7 +29,7 @@ while not converged:
     # Throw some darts and add them to the count
     n_darts_thrown += N_DARTS_PER_THROW
     # Create x,y coordinate pairs for new darts
-    coords = np.random(2 * N_DARTS_PER_THROW).reshape(N_DARTS_PER_THROW, 2)
+    coords = np.random.random(2 * N_DARTS_PER_THROW).reshape(N_DARTS_PER_THROW, 2)
     # Find the distance of each dart from the center of the circle
     distance = np.sqrt(coords[:,0]**2 + coords[:,1]**2)
     # Add new darts that are inside unit circle to thrown to total
