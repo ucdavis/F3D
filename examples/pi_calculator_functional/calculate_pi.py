@@ -11,7 +11,7 @@ def main(significant_digits, n_darts_per_scoring):
     significant_digits: int
         The number of significant digits to calculate pi out to.
     n_darts_per_scoring: int
-        The number of darts to throw between scores. Higher numbers
+        The number of darts to throw between scores (intermediate calculations of pi). Higher numbers
         converge faster.
     """
     pi = calculate_pi(significant_digits, n_darts_per_scoring)
