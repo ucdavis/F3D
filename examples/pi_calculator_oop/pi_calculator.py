@@ -22,6 +22,7 @@ class PiCalculator:
         True if the last 100 trials differ by less than
         a threshold set by ``significant_digits``
     """
+
     def __init__(self, darts_per_score):
         self.darts_per_score = darts_per_score
         self._history = [0, 0]
@@ -30,7 +31,6 @@ class PiCalculator:
     @property
     def history(self):
         return self._history
-
 
     @history.setter
     def history(self, value):
@@ -47,10 +47,10 @@ class PiCalculator:
         significant_digits: int
             Number of significant digits to use to set the convergence threshold.
         """
-        threshold = 1 / 10**(self.significant_digits + 1)
+        threshold = 1 / 10**(self.significant_digits + 2)
         if len(self._history) < 100:
             return False
-        return np.all(abs(np.diff(self.history[-100:])) < threshold)
+        return max(self._history[-100:]) - min(self._history[-100:]) < threshold
 
     def throw_and_score(self):
         """
