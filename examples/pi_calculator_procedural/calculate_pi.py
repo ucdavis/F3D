@@ -26,7 +26,7 @@ if len(sys.argv) > 3:
 #        The number of darts thrown at one time, for which an updated calculation is made.
 
 ### Setup ###
-threshold = 1 / (10 ** N_SIG_DIGS + 2)
+threshold = 1 / (10 ** N_SIG_DIGS + 1)
 
 history = list()
 n_darts_thrown = 0

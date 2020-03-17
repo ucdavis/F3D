@@ -47,7 +47,7 @@ class PiCalculator:
         significant_digits: int
             Number of significant digits to use to set the convergence threshold.
         """
-        threshold = 1 / 10**(self.significant_digits + 2)
+        threshold = 1 / 10**(self.significant_digits + 1)
         if len(self._history) < 100:
             return False
         return np.ptp(self._history[-100:]) < threshold

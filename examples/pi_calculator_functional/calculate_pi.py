@@ -133,7 +133,7 @@ def get_threshold(significant_digits):
     threshold: float
         The corresponding threshold.
     """
-    return 1 / (10 ** (significant_digits + 2))
+    return 1 / (10 ** (significant_digits + 1))
 
 
 def is_converged(threshold, history):
