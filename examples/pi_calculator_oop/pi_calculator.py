@@ -50,7 +50,7 @@ class PiCalculator:
         threshold = 1 / 10**(self.significant_digits + 2)
         if len(self._history) < 100:
             return False
-        return max(self._history[-100:]) - min(self._history[-100:]) < threshold
+        return np.ptp(self._history[-100:]) < threshold
 
     def throw_and_score(self):
         """

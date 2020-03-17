@@ -48,7 +48,7 @@ while not converged:
     if len(history) < 100:
         converged = False
     else:
-        converged = max(history[-100:]) - min(history[-100:]) < threshold
+        converged = np.ptp(history[-100:]) < threshold
 
 ### Print Result to STDOUT ###
 print(round(history[-1], N_SIG_DIGS - 1))

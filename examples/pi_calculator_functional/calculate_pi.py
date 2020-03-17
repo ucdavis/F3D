@@ -155,7 +155,7 @@ def is_converged(threshold, history):
     """
     if len(history) < 100:
         return False
-    return max(history[-100:]) - min(history[-100:]) < threshold
+    return np.ptp(history[-100:]) < threshold
 
 
 def get_number_in_circle(num_thrown):
