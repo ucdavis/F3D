@@ -155,7 +155,7 @@ def is_converged(threshold, history):
     """
     if len(history) < 100:
         return False
-    return max(history[-100:]) - min(history[-100:]) < threshold)
+    return max(history[-100:]) - min(history[-100:]) < threshold
 
 
 def get_number_in_circle(num_thrown):
@@ -173,7 +173,7 @@ def get_number_in_circle(num_thrown):
     num_in_circle: float
         The number of darts the hit in the circle.
     """
-    coords=get_random_coords(num_thrown)
+    coords = get_random_coords(num_thrown)
     return int(sum([np.linalg.norm(coord) < 1 for coord in coords]))
 
 
