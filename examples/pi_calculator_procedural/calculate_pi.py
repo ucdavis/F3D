@@ -3,9 +3,10 @@ import sys
 
 
 ### Parse Arguments ###
-N_SIG_DIGS = sys.argv[1]
-N_DARTS_PER_THROW = sys.argv[2]
-if len(sys.argv) > 2:
+N_SIG_DIGS = int(sys.argv[1])
+N_DARTS_PER_THROW = int(sys.argv[2])
+if len(sys.argv) > 3:
+    print(sys.argv, len(sys.argv))
     raise ValueError("Too many values passed!")
 
 #    Given as input number of significant digits desired and number of darts per "throw", this program calculates pi.
@@ -38,7 +39,7 @@ converged = False
 while not converged:
     # Throw some darts and add them to the count
     n_darts_thrown += N_DARTS_PER_THROW
-    coords = np.random(2 * N_DARTS_PER_THROW).reshape(N_DARTS_PER_THROW, 2)
+    coords = np.random.random(2 * N_DARTS_PER_THROW).reshape(N_DARTS_PER_THROW, 2)
     n_darts_in_circle += sum(np.linalg.norm(coords, axis=1) < 1)
     # Include the resulting value of `pi` in the history
     history.append(4 * n_darts_in_circle / n_darts_thrown)
