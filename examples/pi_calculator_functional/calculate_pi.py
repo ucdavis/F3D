@@ -18,12 +18,47 @@ def main(significant_digits, n_darts_per_scoring):
     print(pi)
 
 
+def add_guess_to_history(
+        history,
+        num_darts_thrown,
+        num_darts_in_circle,
+        num_darts_per_scoring):
+    """
+    Throw some darts at the board, update the counters, and add
+    the resulting guestimate of pi to the history.
+
+    Parameters
+    ----------
+    history: list(float)
+        The guesses of pi
+    num_darts_thrown: int
+        Total number of darts thrown at the board so far.
+    num_darts_in_circle: int
+        Total number of darts that have landed in the circle so far.
+    num_darts_per_scoring: int
+        The number of darts to throw at the board between scoring
+
+    Returns
+    history: list(float)
+        The guesses of pi updated with the new guess
+    num_darts_thrown: int
+        The new number of darts thrown.
+    num_darts_in_circle: int
+        The new number of darts in the circle.
+    """
+    num_darts_thrown, num_darts_in_circle = _throw_and_score(
+        num_darts_per_scoring, num_darts_thrown, num_darts_in_circle)
+    result = 4 * num_darts_in_circle / num_darts_thrown
+    history.append(result)
+    return history, num_darts_thrown, num_darts_in_circle
+
+
 def calculate_pi(
         significant_digits,
         num_darts_thrown=0,
         num_darts_in_circle=0,
         history=None,
-        n_darts_per_scoring=100):
+        num_darts_per_scoring=100):
     """
     Calculates pi.
 
@@ -38,7 +73,7 @@ def calculate_pi(
     history: list(float) or NoneType
         Any past estimates of `pi`, used to check convergence. If None,
         Assumed to be the empty list.
-    n_darts_per_scoring: int
+    num_darts_per_scoring: int
         The number of darts to throw between scores. Higher numbers
         converge faster.
     Returns
@@ -48,18 +83,13 @@ def calculate_pi(
     """
     history = history or list()
     threshold = get_threshold(significant_digits)
-    # We temporarily up the recursion limit because this function calls
-    # itself many times depending on threshold. Change it back to not incur
-    # side effects.
-    recursion_limit = sys.getrecursionlimit()
-    sys.setrecursionlimit(10**(significant_digits + 2))
-    num_darts_thrown, num_darts_in_circle = _throw_and_score(
-        n_darts_per_scoring, num_darts_thrown, num_darts_in_circle)
-    result = 4 * num_darts_in_circle / num_darts_thrown
-    history.append(result)
-    if not is_converged(threshold, history):
-        calculate_pi(significant_digits, num_darts_thrown, num_darts_in_circle, history)
-    sys.setrecursionlimit(recursion_limit)
+    while not is_converged(threshold, history):
+        history, num_darts_thrown, num_darts_in_circle = add_guess_to_history(
+            history,
+            num_darts_thrown,
+            num_darts_in_circle,
+            num_darts_per_scoring
+        )
     return round(history[-1], significant_digits - 1)
 
 
@@ -125,7 +155,7 @@ def is_converged(threshold, history):
     """
     if len(history) < 100:
         return False
-    return np.all(abs(np.diff(history[-100:])) < threshold)
+    return np.ptp(history[-100:]) < threshold
 
 
 def get_number_in_circle(num_thrown):
