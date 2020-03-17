@@ -66,7 +66,7 @@ import pi_calculator_procedural as pi_calculator
 ## Usage
 The functional and OOP calculators have python APIs. Use the OOP implementation with
 ```python
-import pi_calculator_oop as pi_calculator
+from pi_calculator_oop import pi_calculator
 # initialize the calculator by specify the desired precision
 calculator = pi_calculator.PiCalculator(darts_per_score=100)
 # execute the calculation.
