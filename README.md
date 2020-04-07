@@ -6,3 +6,5 @@ The responses were largely a combination of recommendations about best coding pr
 
 Lessons on Modularity and Testing are based on Adam Rupe's excellent lessons on Scientific Programming in Python https://github.com/adamrupe/Scientific-Python-Tutorials
 
+Course requirements and Syllabus can be found at: https://ucdavis.github.io/DS4S/
+
