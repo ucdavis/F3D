@@ -1,5 +1,7 @@
 # Data Science 4 Science (DS4S)
 
+I have a suggestion to the structure of the course Canvas page: I think we should either put all the materials in the Home page. Or we could use the Home page as a content table, which tells us which tab to look at on canvas for different materials. For example, it can say "For Assignments, please check the Assignment tab on canvas". Then put all assignments in the Assignment tab. I think it might be clearer than put all links both on Home page and in each tabs. Sometimes I would jump between tabs in loop to find materials. Other than this, the course is amazing. Thank you for the course!
+
 We developed the course in consultation with some of our alumni in the data science industry. We began by asking them, "Knowing what you know now, what do you wish you had known in graduate school because it would have made you a more productive researcher."
 
 The responses were largely a combination of recommendations about best coding practices and soft skills. Notably absent was any emphasis on particular data analysis techniques. It may seem less exciting to focus on things like unit testing and version control, rather than, say, variational auto encoders, but this is the guidance we have and it makes sense; they are pointing us to foundational aspects of research productivity. 
