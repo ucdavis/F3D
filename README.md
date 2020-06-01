@@ -11,7 +11,7 @@ Lessons on Modularity and Testing are based on Adam Rupe's excellent lessons on 
 Git Lessons are based on the Software Carpentry Lesson: http://swcarpentry.github.io/git-novice/ and the course text book: Effective Computation in Physics (see details below)
 
 ## Repository Organization
-* examples: examples of code that could be useful for this course
+* examples: examples of code that could be useful for this course, such as the code used to calculate 'pi'
 * lessons: material used for each lesson. When more than one topic was covered, lessons are numbered with decimals e.g. (2.1, 2.2). The first directory contains the lesson objectives and the last directory contains the homework assignment
 
 
