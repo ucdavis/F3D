@@ -87,7 +87,7 @@ class CalculateE:
 
     def uniformly_sample_space(self, a_min, a_max, ntrials=1000):
         """
-        uniformaly sample the parameter space from a_min to a_max with ntrails points
+        uniformaly sample the parameter space from a_min to a_max with ntrials points
         and find the posterior at each point
 
         Inputs:
@@ -107,9 +107,9 @@ class CalculateE:
         """
         self._check_inputs(a_min, a_max, ntrials)
         if ntrials:
-            self.ntrails = ntrials
+            self.ntrials = ntrials
         else:
-            ntrials = self.ntrails
+            ntrials = self.ntrials
         self.a_array = np.linspace(a_min, a_max, ntrials)
         self.posterior = np.array([self.calculate_posterior(a) for a in self.a_array])
 
@@ -132,9 +132,9 @@ class CalculateE:
         """
         self._check_inputs(a_min, a_max, ntrials)
         if ntrials:
-            self.ntrails = ntrials
+            self.ntrials = ntrials
         else:
-            ntrials = self.ntrails
+            ntrials = self.ntrials
         self.metropolis_hastings(ntrials, a_min, a_max)
 
 
@@ -144,7 +144,7 @@ class CalculateE:
         """
         assert a_min > 1, 'due to normalization of posterior, a must be greater than 1'
         assert a_min < a_max
-        assert (ntrials > 0) and isinstance(ntrials, int), 'ntrails must be a positive integer'
+        assert (ntrials > 0) and isinstance(ntrials, int), 'ntrials must be a positive integer'
 
     def restart_chain(self):
         """
