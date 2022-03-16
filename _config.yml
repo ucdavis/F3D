@@ -35,7 +35,7 @@ flavor: "python"
 # Most workshops don't use extra pages. More information about extra
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "Data Science for Science"
+title: "Foundations for Data Driven Discovery"
 
 
 #------------------------------------------------------------
@@ -43,7 +43,7 @@ title: "Data Science for Science"
 #------------------------------------------------------------
 
 # What kind of thing is this ("workshop" or "lesson")?
-kind: "workshop"
+kind: "class"
 
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
